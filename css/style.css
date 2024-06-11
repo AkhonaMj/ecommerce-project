@@ -38,11 +38,7 @@ footer{
     text-align: center;
 }
 
-.card {
-    background-color: rgb(189, 167, 167);
-    margin: auto;
 
-}
 
 footer{
 	margin-top: 8em;
@@ -51,4 +47,22 @@ footer{
     background-color: aliceblue;
 
 }
+
+.about-text{
+    background-color: black;
+    width: 800px;
+    text-align: center;
+}
+
+.about-h1, .team-h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.card-body{
+    background-color: rgba(20, 20, 20, 0.864);
+    color: rgba(255, 255, 255, 0.929);
+}
+
 
