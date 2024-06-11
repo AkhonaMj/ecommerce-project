@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 #home_body{
     background-image: url("https://akhonamj.github.io/ecommerce_images/images/Luxury-Living-Room.jpg");
     width: 1400px;
@@ -6,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .welcome-text{
     font-size: 5em;
     font-weight: 500;
@@ -28,6 +30,7 @@ h1{
 
 .nav-link, .navbar-brand{
     color: black;
+    color: black;
     font-weight: 600;
     font-size: larger;
    
@@ -36,17 +39,32 @@ footer{
     text-align: center;
 }
 
-.card {
-    background-color: rgb(189, 167, 167);
-    margin: auto;
 
-}
 
 footer{
+	margin-top: 8em;
 	margin-top: 8em;
 	clear: left;
 	left: 350px;
     background-color: aliceblue;
 
 }
+
+.about-text{
+    background-color: black;
+    width: 800px;
+    text-align: center;
+}
+
+.about-h1, .team-h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.card-body{
+    background-color: rgba(20, 20, 20, 0.864);
+    color: rgba(255, 255, 255, 0.929);
+}
+
 
