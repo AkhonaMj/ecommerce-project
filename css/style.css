@@ -1,24 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-nav img{
-    width: 130px;
-    height: 90px;
+#home_body{
+    background-image: url("https://akhonamj.github.io/ecommerce_images/images/Luxury-Living-Room.jpg");
+    width: 1400px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.welcome-text{
+    font-size: 5em;
+    font-weight: 500;
+    color:white;
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.638);
+
+}
+
+
 
 h1{
     text-align: center;
 }
-main img{
-    width: 1400px;
-    height: 500px;
-    background-repeat: no-repeat;
 
-}
 .navbar-custom{
     background-color:rgb(207, 207, 207);
 }
 
 .nav-link, .navbar-brand{
-    color: gray;
+    color: black;
     font-weight: 600;
     font-size: larger;
    
@@ -34,20 +43,13 @@ footer{
 }
 
 footer{
-	margin-top: 5em;
-	position: fixed;
-	bottom: 120px;
-	clear: left;
-	width: 50%;
-	left: 350px;
+	margin-top: 8em;
+	bottom: 140px;
+	/* clear: left; */
+	width: 100%;
+	/* left: 350px; */
+    background-color:rgba(255, 255, 255, 0.726);
+  
 
 }
 
-/* .rightsReserved{
-	position: relative;
-	bottom: 100px;
-	margin-left:240px ;
-	left: 200px;
-	
-
-} */
