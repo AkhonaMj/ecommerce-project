@@ -30,6 +30,7 @@ h1{
 
 .nav-link, .navbar-brand{
     color: black;
+    color: black;
     font-weight: 600;
     font-size: larger;
    
@@ -41,6 +42,7 @@ footer{
 
 
 footer{
+	margin-top: 8em;
 	margin-top: 8em;
 	clear: left;
 	left: 350px;
