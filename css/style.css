@@ -43,20 +43,10 @@ footer{
 }
 
 footer{
-	margin-top: 5em;
-	position: fixed;
-	bottom: 120px;
+	margin-top: 8em;
 	clear: left;
-	width: 50%;
 	left: 350px;
+    background-color: aliceblue;
 
 }
 
-/* .rightsReserved{
-	position: relative;
-	bottom: 100px;
-	margin-left:240px ;
-	left: 200px;
-	
-
-} */
