@@ -43,13 +43,20 @@ footer{
 }
 
 footer{
-	margin-top: 8em;
-	bottom: 140px;
-	/* clear: left; */
-	width: 100%;
-	/* left: 350px; */
-    background-color:rgba(255, 255, 255, 0.726);
-  
+	margin-top: 5em;
+	position: fixed;
+	bottom: 120px;
+	clear: left;
+	width: 50%;
+	left: 350px;
 
 }
 
+/* .rightsReserved{
+	position: relative;
+	bottom: 100px;
+	margin-left:240px ;
+	left: 200px;
+	
+
+} */
