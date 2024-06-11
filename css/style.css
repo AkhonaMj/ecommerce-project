@@ -35,6 +35,7 @@ footer{
 
 footer{
 	margin-top: 5em;
+	padding-top:-1px;
 	position: fixed;
 	bottom: 120px;
 	clear: left;
