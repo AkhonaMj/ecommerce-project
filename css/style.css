@@ -15,9 +15,17 @@
     text-align: center;
     margin-top: 200px;
     background-color: rgba(0, 0, 0, 0.638);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(40, end) forwards;
 
 }
 
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
 
 
 h1{
@@ -30,20 +38,15 @@ h1{
 
 .nav-link, .navbar-brand{
     color: black;
-    color: black;
     font-weight: 600;
     font-size: larger;
    
 }
+
+
 footer{
     text-align: center;
-}
-
-
-
-footer{
-	margin-top: 8em;
-	margin-top: 8em;
+	margin-top: 16em;
 	clear: left;
 	left: 350px;
     background-color: aliceblue;
@@ -63,8 +66,73 @@ footer{
 
 
 .card-body{
-    background-color: rgba(20, 20, 20, 0.864);
-    color: rgba(255, 255, 255, 0.929);
+    background-color: grey;
+    color: black;
+}
+#card-products{
+    background-color:white;
+
 }
 
 
+.products-div{
+    margin-top: 5%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 80px;
+}
+
+
+.product-div img{
+    width: 250px;
+    height: 250px;
+}
+button{
+    border-radius: 50px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+  }
+
+.search{
+    background-color: white;
+    color: black;
+
+  }
+
+form{
+    text-align: end;
+    margin-right: 300px;
+
+   }
+
+.dropdown{
+    text-align: center;
+
+}
+
+input{
+    height: 37px;
+    width: 200px;
+
+  }
+
+
+
+.btn{
+    background-color: lightslategray;
+    height:34px;
+
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
