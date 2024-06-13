@@ -116,20 +116,11 @@ function filterByCat() {
 
 
 
+selectPrice.addEventListener("change", filterbyPrice);
 function filterbyPrice() {
-  const selectedPrice = parseInt(selectPrice.value);
-  let itemsWithPriceRange = items;
-
-  if (selectedPrice > 0) {
-    itemsWithPriceRange = items.filter(item => item.price >= selectedPrice);
-  }
-
-  main.innerHTML = ""; // Clear previous items
-  displayItems(itemsWithPriceRange);
+    items.sort(function(a, b){return a.price - b.price})
 }
 
-// Add event listener
-selectPrice.addEventListener("change", filterbyPrice);
 
 
 
