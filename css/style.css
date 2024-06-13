@@ -89,13 +89,16 @@ footer{
     width: 250px;
     height: 250px;
 }
-button{
+
+.purchase, .btn-purchase {
     border-radius: 50px;
     border: 2px solid black;
     transition-duration: 0.4s;
+
 }
 
-button:hover {
+
+.purchase:hover {
     background-color: black;
     color: white;
   }
