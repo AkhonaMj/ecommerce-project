@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+#home_body{
+    background-image: url("https://akhonamj.github.io/ecommerce_images/images/Luxury-Living-Room.jpg");
+    width: 1400px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-text{
+    font-size: 5em;
+    font-weight: 500;
+    color:white;
+    text-align: center;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.638);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(40, end) forwards;
+
+}
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+h1{
+    text-align: center;
+}
+
+.navbar-custom{
+    background-color:rgb(207, 207, 207);
+}
+
+.nav-link, .navbar-brand{
+    color: black;
+    font-weight: 600;
+    font-size: larger;
+   
+}
+
+
+footer{
+    text-align: center;
+	margin-top: 16em;
+	clear: left;
+	left: 350px;
+    background-color: aliceblue;
+
+}
+
+.about-text{
+    background-color: black;
+    width: 800px;
+    text-align: center;
+}
+
+.about-h1, .team-h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.card-body{
+    background-color: grey;
+    color: black;
+}
+#card-products{
+    background-color:white;
+
+}
+
+
+.products-div{
+    margin-top: 5%;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 80px;
+}
+
+
+.product-div img{
+    width: 250px;
+    height: 250px;
+}
+
+.purchase, .btn-purchase {
+    border-radius: 50px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+
+}
+
+
+.purchase:hover {
+    background-color: black;
+    color: white;
+  }
+
+.search{
+    background-color: white;
+    color: black;
+
+  }
+
+form{
+    text-align: end;
+    margin-right: 300px;
+
+   }
+
+.dropdown{
+    text-align: center;
+
+}
+
+input{
+    height: 37px;
+    width: 200px;
+
+  }
+
+
+
+.btn{
+    background-color: lightslategray;
+    height:34px;
+
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+
+}
+.get-in-touch h1{
+
+    text-align: center !important;
+}
+
+#contact form {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 600px;
+    margin: auto;
+    background-color: grey;
+    color: black;
+    text-align: center;
+
+  
+    
+}
