@@ -1,6 +1,5 @@
-// document.addEventListener("DOMContentLoaded", function() {
-    let cartTable = document.querySelector(".cart-table-body");
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+ let cartTable = document.querySelector(".cart-table-body");
+ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     function displayCartItems() {
       cartTable.innerHTML = '';
