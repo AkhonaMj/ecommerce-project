@@ -1,5 +1,7 @@
  let cartTable = document.querySelector(".cart-table-body");
  let cart = JSON.parse(localStorage.getItem('cart')) || [];
+ let clearBtn = document.querySelector(".clearBtn");
+ let checkoutMsg = document.querySelector("span");
 
     function displayCartItems() {
       cartTable.innerHTML = '';
@@ -11,10 +13,26 @@
             <td><span>${item.price}</span></td>
             <td><input type="number" value="${item.quantity}"></td>
             <td><span>${(item.price * item.quantity).toFixed(2)}</span></td>
-        </tr>`;
+        </tr>
+        `;   
       });
     }
   
     displayCartItems(); 
 
 
+clearBtn.addEventListener("click",clearCart)
+
+
+function clearCart() {
+  if (cart.length > 0) {
+      cart = [];
+      localStorage.setItem('cart', JSON.stringify(cart));
+      displayCartItems();
+
+      checkoutMsg.innerHTML = "Thank you for shopping with us!";
+  }
+}
+
+    
+    

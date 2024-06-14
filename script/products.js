@@ -16,7 +16,7 @@ function createItem(id, name,category,image, description, price, quantity){
     this.quantity = quantity
     }
     
-let item1 = new createItem(1, "Bar Chairs", "Kitchen", "https://akhonamj.github.io/ecommerce_images/images/barChairs.jpg", "2Kitchen Bar chair",  25000, 1)
+let item1 = new createItem(1, "Bar Chairs", "Kitchen", "https://akhonamj.github.io/ecommerce_images/images/barChairs.jpg", "2 Kitchen Bar chairs",  25000, 1)
 let item2 = new createItem(2, "Dressing Table", "Bedroom", "https://akhonamj.github.io/ecommerce_images/images/luxury_dresser.jpg", "Bedroom dust pink dressing table",  21000, 1)
 let item3 = new createItem(3, "Couch", "Lounge", "https://akhonamj.github.io/ecommerce_images/images/couch.jpg", "Comfy green 2 seater couch", 45000, 1)
 let item4 = new createItem(4, "Bed", "Bedroom", "https://akhonamj.github.io/ecommerce_images/images/bed3.jpg", "navy bed with headboard",  52000, 1)
@@ -37,12 +37,12 @@ function displayItems(dynamic){
         <h5 class="card-title">${item.name} ${item.price}</h5>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn-purchase" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <button type="button" class="btn-purchase" data-bs-toggle="modal" data-bs-target="#staticBackdrop${item.id}">
             View More
           </button>
           
           <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal fade" id="staticBackdrop${item.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -54,7 +54,6 @@ function displayItems(dynamic){
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary " >Add To Cart</button>
                 </div>
                 </div>
                 </div>
@@ -63,7 +62,7 @@ function displayItems(dynamic){
        
          <button class="purchase" value="${item.id}">Add To Cart</button>
 
-         
+
          </div>
     </div>
         
@@ -129,11 +128,15 @@ function filterByCat() {
 
 
 
-selectPrice.addEventListener("change", filterbyPrice);
-function filterbyPrice() {
-    items.sort(function(a, b){return a.price - b.price})
-}
+// selectPrice.addEventListener("change", sortPrice);
 
+// function sortPrice() {
+//   items.sort(function(a,b) {
+//     return a.price - b.price
+    
+//   })
+//   displayItems(sortPrice)
+// }
 
 
 
