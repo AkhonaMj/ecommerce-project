@@ -53,7 +53,7 @@ function displayItems(dynamic){
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary " >Add To Cart</button>
+                  <button type="button" class="purchase">Add To Cart</button>
                 </div>
               </div>
             </div>
@@ -70,6 +70,7 @@ function displayItems(dynamic){
     })
 }
 displayItems(items)
+
 
 
 function addToCart(id){
