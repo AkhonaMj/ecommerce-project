@@ -40,18 +40,73 @@
   </nav>
       <main>
         <h1>Admin Page</h1>
-        <form id="product-form">
-            <input type="hidden" id="product-id">
-            <label for="product-name">Name:</label>
-            <input type="text" id="product-name" required><br>
-            <label for="product-price">Price:</label>
-            <input type="number" id="product-price" required><br>
-            <label for="product-description">Description:</label>
-            <textarea id="product-description" required></textarea><br>
-            <label for="product-image">Image URL:</label>
-            <input type="text" id="product-image" required><br>
-            <button type="submit">Save Product</button>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Add Products
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="text" class="form-control" id="description">
+          </div>
+         
+          <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <input type="text" class="form-control" id="category">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Image url</label>
+            <input type="text" class="form-control" id="image">
+          </div>
+         
+         
+         
         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="saveProducts btn-primary">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Category</th>
+      <th>image</th>
+      <th>price</th>
+      <th>Edit product</th>
+      
+    </tr>
+  </thead>
+  
+  <tbody>
+
+  </tbody>
+
+</table>
+
+        
       </main>
     <footer class="footer justify-content-center">
         <div class="container text-align-center" >

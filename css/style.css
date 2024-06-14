@@ -18,7 +18,7 @@
     overflow: hidden;
     white-space: nowrap;
     width: 0;
-    animation: typing 5s steps(40, end) forwards;
+    animation: typing 5s steps(43, end) forwards;
 
 }
 
@@ -40,16 +40,18 @@ h1{
     color: black;
     font-weight: 600;
     font-size: larger;
+    
+    
    
 }
 
 
 footer{
     text-align: center;
-	margin-top: 16em;
-	clear: left;
-	left: 350px;
+	margin-top: 22em;
+	width: 100em;
     background-color: aliceblue;
+ 
 
 }
 
@@ -156,3 +158,8 @@ input{
   
     
 }
+
+table, th, td {
+    border: 1px solid;
+  }
+  
